@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bytebank.Modelos\Bytebank.Modelos.csproj">
+      <Project>{fc0c341a-112f-4dfb-833e-07268f6783f9}</Project>
+      <Name>Bytebank.Modelos</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
