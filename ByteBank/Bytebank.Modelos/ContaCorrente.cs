@@ -2,6 +2,9 @@
 
 namespace Bytebank.Modelos
 {
+    /// <summary>
+    /// Define uma Conta Corrente do banco ByteBank.
+    /// </summary>
     public class ContaCorrente
     {
         public static double TaxaOperacao { get; private set; }
@@ -36,6 +39,11 @@ namespace Bytebank.Modelos
         //O método estático é uma característica da Classe e não específica de cada conta
         public static int TotalDeContasCriadas { get; private set; }
 
+        /// <summary>
+        /// Cria uma instância de ContaCorrente com os argumentos utilizados;
+        /// </summary>
+        /// <param name="agencia">Representa o valor da propriedade <see cref="Agencia"/> e deve possuir um valor maior que zero.</param>
+        /// <param name="numero">Representa o valor da propriedade <see cref="Numero"/> e deve possuir um valor maior que zero.</param>
         public ContaCorrente(int agencia, int numero)
         {
             if (agencia <= 0)
