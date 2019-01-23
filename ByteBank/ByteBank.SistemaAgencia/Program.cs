@@ -63,7 +63,6 @@ namespace ByteBank.SistemaAgencia
             Console.ReadLine();
         }
 
-<<<<<<< HEAD
         static void TestaArraydeContaCorrente()
         {
             ContaCorrente[] contas = new ContaCorrente[]
@@ -73,13 +72,14 @@ namespace ByteBank.SistemaAgencia
                 new ContaCorrente(0587, 451258)
             };
 
-            for(int indice = 0; indice < contas.Length; indice++)
+            for (int indice = 0; indice < contas.Length; indice++)
             {
                 Console.WriteLine($"Conta {indice} {contas[indice].Numero}");
             }
 
             Console.ReadLine();
-=======
+        }
+
         public void TestaStringERegex()
         {
             {
@@ -207,7 +207,6 @@ namespace ByteBank.SistemaAgencia
                 string argumentos = url.Substring(indiceInterrogacao + 1);
                 Console.WriteLine(argumentos);
             }
->>>>>>> 8ff9978ea55890210c98fbdb2c4796e64162997a
         }
     }
 }
